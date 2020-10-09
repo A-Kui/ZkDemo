@@ -26,7 +26,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.单页面旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqi-ym-l7L">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.单页面旋转" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqi-ym-l7L">
                                                     <rect key="frame" x="35" y="11.5" width="310" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -37,6 +37,27 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="Hqi-ym-l7L" secondAttribute="trailing" constant="30" id="FvW-Ne-jtA"/>
                                                 <constraint firstItem="Hqi-ym-l7L" firstAttribute="centerY" secondItem="am6-Pn-aLV" secondAttribute="centerY" id="OU7-v1-I46"/>
                                                 <constraint firstItem="Hqi-ym-l7L" firstAttribute="leading" secondItem="am6-Pn-aLV" secondAttribute="leadingMargin" constant="15" id="dLo-Eq-R7d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="yAS-hs-tbS">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yAS-hs-tbS" id="B1h-tN-9Oo">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.图像平均算法" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTb-Wa-R5w">
+                                                    <rect key="frame" x="35" y="11.5" width="310" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eTb-Wa-R5w" firstAttribute="leading" secondItem="B1h-tN-9Oo" secondAttribute="leadingMargin" constant="15" id="6QP-eF-t0F"/>
+                                                <constraint firstItem="eTb-Wa-R5w" firstAttribute="centerY" secondItem="B1h-tN-9Oo" secondAttribute="centerY" id="hsd-mA-xJo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eTb-Wa-R5w" secondAttribute="trailing" constant="30" id="rpZ-ee-YN5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

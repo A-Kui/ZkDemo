@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A837E06B2530538400FF594B /* ImageAveragingAlgorithmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A837E0692530538400FF594B /* ImageAveragingAlgorithmVC.m */; };
+		A837E0702530538E00FF594B /* ImageAveragingAlgorithmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A837E06F2530538E00FF594B /* ImageAveragingAlgorithmVC.xib */; };
 		A847C4C3251B0A3F00C8ABC8 /* ZkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A847C4C2251B0A3F00C8ABC8 /* ZkNavigationController.m */; };
 		A84FFA0A251A025C00D11F15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A84FFA09251A025C00D11F15 /* AppDelegate.m */; };
 		A84FFA10251A025C00D11F15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84FFA0F251A025C00D11F15 /* ViewController.m */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A837E0692530538400FF594B /* ImageAveragingAlgorithmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAveragingAlgorithmVC.m; sourceTree = "<group>"; };
+		A837E06A2530538400FF594B /* ImageAveragingAlgorithmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAveragingAlgorithmVC.h; sourceTree = "<group>"; };
+		A837E06F2530538E00FF594B /* ImageAveragingAlgorithmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAveragingAlgorithmVC.xib; sourceTree = "<group>"; };
 		A847C4C1251B0A3F00C8ABC8 /* ZkNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZkNavigationController.h; sourceTree = "<group>"; };
 		A847C4C2251B0A3F00C8ABC8 /* ZkNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZkNavigationController.m; sourceTree = "<group>"; };
 		A84FFA05251A025C00D11F15 /* ZkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A837E0682530537100FF594B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A8A2787A251AF2EF00E2257A /* SpinViewController.h */,
+				A8A2787B251AF2EF00E2257A /* SpinViewController.m */,
+				A8A2787C251AF2EF00E2257A /* SpinViewController.xib */,
+				A837E06A2530538400FF594B /* ImageAveragingAlgorithmVC.h */,
+				A837E0692530538400FF594B /* ImageAveragingAlgorithmVC.m */,
+				A837E06F2530538E00FF594B /* ImageAveragingAlgorithmVC.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		A84FF9FC251A025C00D11F15 = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +131,7 @@
 				A84FFA09251A025C00D11F15 /* AppDelegate.m */,
 				A84FFA0E251A025C00D11F15 /* ViewController.h */,
 				A84FFA0F251A025C00D11F15 /* ViewController.m */,
-				A8A2787A251AF2EF00E2257A /* SpinViewController.h */,
-				A8A2787B251AF2EF00E2257A /* SpinViewController.m */,
-				A8A2787C251AF2EF00E2257A /* SpinViewController.xib */,
+				A837E0682530537100FF594B /* ViewController */,
 				A847C4C1251B0A3F00C8ABC8 /* ZkNavigationController.h */,
 				A847C4C2251B0A3F00C8ABC8 /* ZkNavigationController.m */,
 				A84FFA11251A025C00D11F15 /* Main.storyboard */,
@@ -247,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A837E0702530538E00FF594B /* ImageAveragingAlgorithmVC.xib in Resources */,
 				A8A2787E251AF2EF00E2257A /* SpinViewController.xib in Resources */,
 				A84FFA18251A025D00D11F15 /* LaunchScreen.storyboard in Resources */,
 				A84FFA15251A025D00D11F15 /* Assets.xcassets in Resources */,
@@ -276,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8A2787D251AF2EF00E2257A /* SpinViewController.m in Sources */,
+				A837E06B2530538400FF594B /* ImageAveragingAlgorithmVC.m in Sources */,
 				A847C4C3251B0A3F00C8ABC8 /* ZkNavigationController.m in Sources */,
 				A84FFA10251A025C00D11F15 /* ViewController.m in Sources */,
 				A84FFA0A251A025C00D11F15 /* AppDelegate.m in Sources */,

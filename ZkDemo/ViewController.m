@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 #import "SpinViewController.h"
-
+#import "ImageAveragingAlgorithmVC.h"
 @interface ViewController ()
 
 @end
@@ -20,10 +20,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
-     
-    SpinViewController *vc = [[SpinViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
-    
+      
+    if (indexPath.row == 0) {
+        SpinViewController *vc = [[SpinViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 1) {
+        ImageAveragingAlgorithmVC *vc = [[ImageAveragingAlgorithmVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end
