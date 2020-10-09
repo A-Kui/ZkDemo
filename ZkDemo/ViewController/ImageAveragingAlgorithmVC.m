@@ -45,8 +45,8 @@
    
    for (int i = 1; i <= 10; i++) {
        
-//        UIImage *mg = [UIImage imageNamed:[NSString stringWithFormat:@"SamplePictureZK%d",i]];
-       UIImage *mg = [UIImage imageNamed:[NSString stringWithFormat:@"SamplePicture%d",i]];
+        UIImage *mg = [UIImage imageNamed:[NSString stringWithFormat:@"SamplePictureZK%d",i]];
+//       UIImage *mg = [UIImage imageNamed:[NSString stringWithFormat:@"SamplePicture%d",i]];
        
        if (mg) {
            const char *bytes = [self getImgPixelMatrixWithImage:mg];
