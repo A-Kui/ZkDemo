@@ -50,10 +50,9 @@
        
        if (mg) {
            const char *bytes = [self getImgPixelMatrixWithImage:mg];
+           NSLog(@"i=%d---bytes长度:%lu",i,strlen(bytes));
            [dataArr addObject:[NSData dataWithBytes:bytes length:strlen(bytes)]];
        }
-       
-       NSLog(@"i=%d",i);
         
    }
    
@@ -69,6 +68,10 @@
 
            int red = 0,green = 0,blue = 0,alpha = 0;
 
+//           if (pixelIndex > 7000000) {
+//               NSLog(@"i:%zu--j:%zu",i,j);
+//           }
+           
            for (size_t k = 0; k < dataArr.count; k++) {
 
                unsigned const char *bytes = [dataArr[k] bytes];
@@ -85,7 +88,7 @@
            int b = blue / dataArr.count;
 
            // 赋值rgb通道
-           imgPixel[pixelIndex+ 0] = a;
+           imgPixel[pixelIndex + 0] = a;
            imgPixel[pixelIndex + 1] = r;
            imgPixel[pixelIndex + 2] = g;
            imgPixel[pixelIndex + 3] = b;
