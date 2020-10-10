@@ -75,7 +75,20 @@
            for (size_t k = 0; k < dataArr.count; k++) {
 
                unsigned const char *bytes = [dataArr[k] bytes];
-
+               /**使用48行的报错. 49行正常没问题.
+                为什么这里 k = 9 的时候 bytes[7553024]会越界.
+                而1-9 长度也会有越界不报错
+                i=1---bytes长度:6087361
+                i=2---bytes长度:1937257
+                i=3---bytes长度:1919937
+                i=4---bytes长度:2421025
+                i=5---bytes长度:4981149
+                i=6---bytes长度:1928593
+                i=7---bytes长度:3876481
+                i=8---bytes长度:753853
+                i=9---bytes长度:6078057
+                i=10---bytes长度:7549361
+                */
                alpha += bytes[pixelIndex];
                red += bytes[pixelIndex + 1];
                green += bytes[pixelIndex + 2];
