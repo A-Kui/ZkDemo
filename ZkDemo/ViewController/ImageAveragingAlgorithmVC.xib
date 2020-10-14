@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageAveragingAlgorithmVC">
             <connections>
+                <outlet property="img" destination="NxT-4Q-Zn3" id="KfI-xP-ysd"/>
+                <outlet property="imgSecond" destination="haJ-uJ-EAc" id="PTb-zD-EHk"/>
+                <outlet property="scrollViewFirst" destination="EQr-Rb-xgH" id="cNw-ja-dYS"/>
+                <outlet property="scrollViewSecond" destination="rjQ-ue-Py1" id="1fp-vy-Bmh"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ALt-0t-3JY"/>
             </connections>
         </placeholder>
@@ -32,18 +36,77 @@
                         <action selector="clickBtn:" destination="-1" eventType="touchUpInside" id="Tri-J2-4xg"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iij-CX-zQN">
+                    <rect key="frame" x="0.0" y="762" width="414" height="50"/>
+                    <color key="backgroundColor" red="0.20392156859999999" green="0.69019607839999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="点击处理">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickAveragingAlgorithmBtn:" destination="-1" eventType="touchUpInside" id="Lbz-qM-yDg"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O05-df-Mic">
+                    <rect key="frame" x="0.0" y="612" width="414" height="150"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="HAt-1b-Fbv"/>
+                    </constraints>
+                    <string key="text">原图对比算法处理后(图片放大可以明显看到差距)
+
+存在几个问题.
+1.内存优化了一下,还是不能完全释放所有内存.
+2.算法处理过程较慢
+目前没有时间继续研究.有兴趣的朋友可以研究一下如何优化这两点</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="10" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQr-Rb-xgH">
+                    <rect key="frame" x="0.0" y="52" width="414" height="218"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0JZ" translatesAutoresizingMaskIntoConstraints="NO" id="NxT-4Q-Zn3">
+                            <rect key="frame" x="0.0" y="0.0" width="3840" height="2160"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.43978580830000003" green="0.69190305470000002" blue="0.99918907879999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="10" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjQ-ue-Py1">
+                    <rect key="frame" x="0.0" y="295" width="414" height="255"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haJ-uJ-EAc">
+                            <rect key="frame" x="0.0" y="0.0" width="3840" height="2160"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.43978580830000003" green="0.69190305470000002" blue="0.99918907879999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="iij-CX-zQN" firstAttribute="top" secondItem="O05-df-Mic" secondAttribute="bottom" id="7QR-TN-2NT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="O05-df-Mic" secondAttribute="trailing" id="Arj-Zj-iv6"/>
+                <constraint firstItem="O05-df-Mic" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="D20-T5-Pee"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JUt-wm-1Oh" secondAttribute="trailing" id="FKi-lr-TlJ"/>
+                <constraint firstItem="JUt-wm-1Oh" firstAttribute="top" secondItem="iij-CX-zQN" secondAttribute="bottom" id="Nvs-4i-jFC"/>
+                <constraint firstItem="iij-CX-zQN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OLF-ah-0MI"/>
                 <constraint firstItem="JUt-wm-1Oh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PEF-L9-i7x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iij-CX-zQN" secondAttribute="trailing" id="q2i-bt-5PM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="JUt-wm-1Oh" secondAttribute="bottom" id="s2s-O4-ZoA"/>
+                <constraint firstItem="JUt-wm-1Oh" firstAttribute="height" secondItem="iij-CX-zQN" secondAttribute="height" id="wrl-qc-J90"/>
             </constraints>
-            <point key="canvasLocation" x="141" y="154"/>
+            <point key="canvasLocation" x="119" y="102"/>
         </view>
     </objects>
     <resources>
+        <image name="0JZ" width="3840" height="2160"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
