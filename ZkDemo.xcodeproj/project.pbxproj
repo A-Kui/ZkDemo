@@ -11,6 +11,11 @@
 		A837E06B2530538400FF594B /* ImageAveragingAlgorithmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A837E0692530538400FF594B /* ImageAveragingAlgorithmVC.m */; };
 		A837E0702530538E00FF594B /* ImageAveragingAlgorithmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A837E06F2530538E00FF594B /* ImageAveragingAlgorithmVC.xib */; };
 		A847C4C3251B0A3F00C8ABC8 /* ZkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A847C4C2251B0A3F00C8ABC8 /* ZkNavigationController.m */; };
+		A849ECA8268178F70002759D /* DiyCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A849ECA6268178F70002759D /* DiyCameraVC.m */; };
+		A849ECA9268178F70002759D /* DiyCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A849ECA7268178F70002759D /* DiyCameraVC.xib */; };
+		A849ECBA26817A080002759D /* FMWModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A849ECB626817A070002759D /* FMWModel.m */; };
+		A849ECBB26817A080002759D /* AVAssetWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A849ECB726817A070002759D /* AVAssetWriteManager.m */; };
+		A849ECC126817A2A0002759D /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A849ECBF26817A2A0002759D /* XCFileManager.m */; };
 		A84FFA0A251A025C00D11F15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A84FFA09251A025C00D11F15 /* AppDelegate.m */; };
 		A84FFA10251A025C00D11F15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84FFA0F251A025C00D11F15 /* ViewController.m */; };
 		A84FFA13251A025C00D11F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FFA11251A025C00D11F15 /* Main.storyboard */; };
@@ -59,6 +64,15 @@
 		A837E06F2530538E00FF594B /* ImageAveragingAlgorithmVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAveragingAlgorithmVC.xib; sourceTree = "<group>"; };
 		A847C4C1251B0A3F00C8ABC8 /* ZkNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZkNavigationController.h; sourceTree = "<group>"; };
 		A847C4C2251B0A3F00C8ABC8 /* ZkNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZkNavigationController.m; sourceTree = "<group>"; };
+		A849ECA5268178F70002759D /* DiyCameraVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiyCameraVC.h; sourceTree = "<group>"; };
+		A849ECA6268178F70002759D /* DiyCameraVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiyCameraVC.m; sourceTree = "<group>"; };
+		A849ECA7268178F70002759D /* DiyCameraVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiyCameraVC.xib; sourceTree = "<group>"; };
+		A849ECB626817A070002759D /* FMWModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMWModel.m; sourceTree = "<group>"; };
+		A849ECB726817A070002759D /* AVAssetWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAssetWriteManager.m; sourceTree = "<group>"; };
+		A849ECB826817A070002759D /* AVAssetWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAssetWriteManager.h; sourceTree = "<group>"; };
+		A849ECB926817A080002759D /* FMWModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMWModel.h; sourceTree = "<group>"; };
+		A849ECBF26817A2A0002759D /* XCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCFileManager.m; sourceTree = "<group>"; };
+		A849ECC026817A2A0002759D /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileManager.h; sourceTree = "<group>"; };
 		A84FFA05251A025C00D11F15 /* ZkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FFA08251A025C00D11F15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A84FFA09251A025C00D11F15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -150,8 +164,24 @@
 				A8A2787C251AF2EF00E2257A /* SpinViewController.xib */,
 				A8EF0D2C268073210047B2F6 /* TestVC.h */,
 				A8EF0D2D268073210047B2F6 /* TestVC.m */,
+				A849ECA5268178F70002759D /* DiyCameraVC.h */,
+				A849ECA6268178F70002759D /* DiyCameraVC.m */,
+				A849ECA7268178F70002759D /* DiyCameraVC.xib */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A849ECB52681797A0002759D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A849ECB826817A070002759D /* AVAssetWriteManager.h */,
+				A849ECB726817A070002759D /* AVAssetWriteManager.m */,
+				A849ECB926817A080002759D /* FMWModel.h */,
+				A849ECB626817A070002759D /* FMWModel.m */,
+				A849ECC026817A2A0002759D /* XCFileManager.h */,
+				A849ECBF26817A2A0002759D /* XCFileManager.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		A84FF9FC251A025C00D11F15 = {
@@ -185,6 +215,7 @@
 				A84FFA09251A025C00D11F15 /* AppDelegate.m */,
 				A84FFA0E251A025C00D11F15 /* ViewController.h */,
 				A84FFA0F251A025C00D11F15 /* ViewController.m */,
+				A849ECB52681797A0002759D /* Tool */,
 				A837E0682530537100FF594B /* ViewController */,
 				A847C4C1251B0A3F00C8ABC8 /* ZkNavigationController.h */,
 				A847C4C2251B0A3F00C8ABC8 /* ZkNavigationController.m */,
@@ -339,6 +370,7 @@
 				A837E0702530538E00FF594B /* ImageAveragingAlgorithmVC.xib in Resources */,
 				A89B32B6253C84E400E0CB0B /* lufei.png in Resources */,
 				A8A2787E251AF2EF00E2257A /* SpinViewController.xib in Resources */,
+				A849ECA9268178F70002759D /* DiyCameraVC.xib in Resources */,
 				A84FFA18251A025D00D11F15 /* LaunchScreen.storyboard in Resources */,
 				A8FEFF762538487E00FA108F /* OpenCVImageAverageVC.xib in Resources */,
 				A84FFA15251A025D00D11F15 /* Assets.xcassets in Resources */,
@@ -398,14 +430,18 @@
 				A8A2787D251AF2EF00E2257A /* SpinViewController.m in Sources */,
 				A837E06B2530538400FF594B /* ImageAveragingAlgorithmVC.m in Sources */,
 				A847C4C3251B0A3F00C8ABC8 /* ZkNavigationController.m in Sources */,
+				A849ECC126817A2A0002759D /* XCFileManager.m in Sources */,
 				A8EF0D2F268073210047B2F6 /* TestVC.m in Sources */,
 				A84FFA10251A025C00D11F15 /* ViewController.m in Sources */,
 				A84FFA0A251A025C00D11F15 /* AppDelegate.m in Sources */,
 				A89B3283253C64C700E0CB0B /* OpenCVTestVC.mm in Sources */,
 				A8EF0D27268072B20047B2F6 /* ZMJoystick.m in Sources */,
+				A849ECBA26817A080002759D /* FMWModel.m in Sources */,
+				A849ECA8268178F70002759D /* DiyCameraVC.m in Sources */,
 				A84FFA1B251A025D00D11F15 /* main.m in Sources */,
 				A8FEFF752538487E00FA108F /* OpenCVImageAverageVC.mm in Sources */,
 				A89B32AD253C808E00E0CB0B /* OpenCVAddWatermarkVC.mm in Sources */,
+				A849ECBB26817A080002759D /* AVAssetWriteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +594,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -580,6 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JV39K6U9AB;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = ZkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -600,6 +638,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JV39K6U9AB;
+				EXCLUDED_ARCHS = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = ZkDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

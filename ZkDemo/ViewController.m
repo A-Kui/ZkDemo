@@ -11,6 +11,8 @@
 #import "OpenCVImageAverageVC.h"
 #import "OpenCVTestVC.h"
 #import "OpenCVAddWatermarkVC.h"
+#import "DiyCameraVC.h"
+
 #import "TestVC.h"
 
 
@@ -27,28 +29,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
     
-    if (indexPath.row == 0) {
-        SpinViewController *vc = [[SpinViewController alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.row == 1) {
-        ImageAveragingAlgorithmVC *vc = [[ImageAveragingAlgorithmVC alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.row == 2) {
-        OpenCVImageAverageVC *vc = [[OpenCVImageAverageVC alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }else if (indexPath.row == 3) {
-        OpenCVAddWatermarkVC *vc = [[OpenCVAddWatermarkVC alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }else {
-        TestVC *vc = [[TestVC alloc]init];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
+    NSArray *arr = @[@"SpinViewController",@"ImageAveragingAlgorithmVC",
+                     @"OpenCVImageAverageVC",@"OpenCVAddWatermarkVC",
+                     @"DiyCameraVC",@"TestVC"];
     
+    UIViewController *vc = [[NSClassFromString(arr[indexPath.row]) alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+  
 }
-
-
-
-
-
+ 
 
 @end

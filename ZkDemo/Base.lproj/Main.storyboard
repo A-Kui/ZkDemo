@@ -110,7 +110,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doN-7d-OKx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.自定义相机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doN-7d-OKx">
                                                     <rect key="frame" x="35" y="11.5" width="310" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -121,6 +121,27 @@
                                                 <constraint firstItem="doN-7d-OKx" firstAttribute="leading" secondItem="sRf-eM-3Vo" secondAttribute="leadingMargin" constant="15" id="XWH-YI-UI8"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="doN-7d-OKx" secondAttribute="trailing" constant="30" id="cbv-NJ-IFa"/>
                                                 <constraint firstItem="doN-7d-OKx" firstAttribute="centerY" secondItem="sRf-eM-3Vo" secondAttribute="centerY" id="hll-XY-oH0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="uXM-JI-tgP">
+                                        <rect key="frame" x="0.0" y="245.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uXM-JI-tgP" id="5sF-Z6-fKo">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGG-V2-KLn">
+                                                    <rect key="frame" x="35" y="11.5" width="310" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PGG-V2-KLn" secondAttribute="trailing" constant="30" id="2Zi-6R-72B"/>
+                                                <constraint firstItem="PGG-V2-KLn" firstAttribute="leading" secondItem="5sF-Z6-fKo" secondAttribute="leadingMargin" constant="15" id="Uos-qT-aaR"/>
+                                                <constraint firstItem="PGG-V2-KLn" firstAttribute="centerY" secondItem="5sF-Z6-fKo" secondAttribute="centerY" id="tNF-e1-fSh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
