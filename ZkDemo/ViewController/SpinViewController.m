@@ -84,7 +84,7 @@
 - (BOOL)shouldAutorotate {
     return YES;
 }
- 
+  
 /// 当设备旋转时.会走这里返回需要旋转的方向 (如AppDelegate.allowRotation设置UIInterfaceOrientationMaskPortrait 旋转的方向不支持时.触发旋转会闪退:)
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
      

@@ -8,7 +8,11 @@
 #import "ViewController.h"
 #import "SpinViewController.h"
 #import "ImageAveragingAlgorithmVC.h"
- 
+#import "OpenCVImageAverageVC.h"
+#import "OpenCVTestVC.h"
+#import "OpenCVAddWatermarkVC.h"
+#import "TestVC.h"
+
 
 @interface ViewController ()
 
@@ -28,6 +32,15 @@
         [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.row == 1) {
         ImageAveragingAlgorithmVC *vc = [[ImageAveragingAlgorithmVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 2) {
+        OpenCVImageAverageVC *vc = [[OpenCVImageAverageVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (indexPath.row == 3) {
+        OpenCVAddWatermarkVC *vc = [[OpenCVAddWatermarkVC alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else {
+        TestVC *vc = [[TestVC alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     
